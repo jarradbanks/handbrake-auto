@@ -1,7 +1,8 @@
 {
-    "inputPath": "G:/Medal/Edits",
-    "outputPath": "C:/Users/Jarrad/Videos/Compressed",
-    "presetName": "custom.json",
-    "acceptedExtensions": ["mp4", "m4v"],
-    "outputExtension": "mp4"
+  "inputPath": "V:\\Valorant Clips",
+  "outputPath": "V:\\Valorant Clips\\Compressed",
+  "presetName": "custom.json",
+  "acceptedExtensions": ["mp4", "m4v"],
+  "outputExtension": "mp4",
+  "removeInputFiles": false
 }

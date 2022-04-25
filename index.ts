@@ -47,6 +47,10 @@ if (!fs.existsSync(path.resolve("settings.json"))) {
 } else {
     try {
         settings = JSON.parse(fs.readFileSync(path.resolve("settings.json")).toString());
+
+        if (!fs.existsSync(settings.outputPath)) {
+            fs.mkdirSync(settings.outputPath);
+        }
     } catch (error) {
         console.log(`\x1b[31mSettings file is not valid JSON, please check the settings.json file.\x1b[0m`);
         waitForExit();
